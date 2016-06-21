@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Save the tabs",
+  "description": "This extension saves the tabs opened in chrome, so you can re-open them at some point.",
+  "version": "1.0",
+  "permissions": [
+      "tabs",
+      "storage"
+  ],
+  "browser_action": {
+    "default_icon": "menu.png",
+    "default_popup": "popup.html"
+  }
+}
