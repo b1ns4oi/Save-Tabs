@@ -19,3 +19,5 @@ The `Re-open Tabs` button will re-open all the tabs you saved last time by click
 Since Chrome 20.
 ## Permissions
 This extension needs the `tabs` (current active webpages) and `storage` (store tabs data) permissions.
+## TO-DO features
+[Issues](https://github.com/b1ns4oi/Save-Tabs/issues)
