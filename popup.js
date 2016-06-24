@@ -40,5 +40,14 @@ function reopenTabs() {
 		for (i = 0; i < items.url_key.length; i++) {
 			chrome.tabs.create({ url: items.url_key[i] });
 		}
+
+		// remove empty tabs
+		chrome.tabs.query({}, function(tabs) {
+			for (var i = 0; i < tabs.length; i++) {
+			    if (tabs[i].url === "chrome://newtab/") {
+			        chrome.tabs.remove(tabs[i].id);
+			    }
+			}
+		});
 	});
 }
